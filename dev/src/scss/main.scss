@@ -1,0 +1,16 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "global";
+
+@import "./components/header";
+
+@import "./components/initial";
+@import "./components/product";
+@import "./components/accessories";
+@import "./components/specification";
+@import "./components/questions";
+@import "./components/feedback";
+
+@import "./components/footer";

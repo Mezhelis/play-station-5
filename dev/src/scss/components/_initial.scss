@@ -1,0 +1,51 @@
+.initial {
+  background: url("../images/background-page-main.jpg");
+
+  &::before {
+    background: radial-gradient(
+      45.97% 54.43% at 50% 45.57%,
+      rgba(23, 26, 28, 0) 50.28%,
+      rgba(23, 26, 28, 0.00225974) 50.29%,
+      rgba(4, 5, 5, 0.820343) 58.72%,
+      rgba(5, 5, 6, 0.792703) 80.08%,
+      #000000 87.89%
+    );
+    opacity: 0.4;
+  }
+
+  &__body {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  &__title {
+    font-size: 80px;
+    line-height: 98px;
+    @extend %sf-600;
+    margin: 0 0 25px 0;
+    padding: 0;
+
+    @media (max-width: 576px) {
+      font-size: 50px;
+      line-height: 54px;
+    }
+  }
+  &__img {
+    max-width: 900px;
+
+    img {
+      width: 100%;
+    }
+  }
+  &__desc {
+    margin: 25px 0 35px;
+    max-width: 500px;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+  }
+}
